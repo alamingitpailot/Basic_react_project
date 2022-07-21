@@ -30,11 +30,7 @@ class App extends Component {
      
   }
 
-  // testHandle = (e) => {
-  //   this.setState({ inputText: e.target.value });
-  //   console.log(this.state.inputText);
-  // }
-
+  
   showProducts = (e) => {
     this.setState({ sp: true }); 
   }
@@ -49,11 +45,7 @@ class App extends Component {
     return (
       <div><Header/>
          
-        {/* <Products items={this.state.products} /> */}
-
-        {/* <form action="" method="">
-          <input type="text" placeholder='input text' onChange={this.testHandle} />
-        </form> */}
+         
         <button onClick={this.showProducts}>Show Product</button>
         {showProductM}
       </div>
