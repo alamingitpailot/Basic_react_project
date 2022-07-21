@@ -30,7 +30,11 @@ class App extends Component {
      
   }
 
-  
+  // testHandle = (e) => {
+  //   this.setState({ inputText: e.target.value });
+  //   console.log(this.state.inputText);
+  // }
+
   showProducts = (e) => {
     this.setState({ sp: true }); 
   }
