@@ -1,59 +1,25 @@
+ 
+import './App.css';
+
 import React, { Component } from 'react'
 
-import './App.css';
-import Header from './components/Header';
-import Products from './components/Products';
- 
-
-
-
-
 class App extends Component {
-  state = {
-    category: "E-commerce",
-    products: [
-      {
-        id: 1,
-        name: 'T-shirt',
-      },
-      {
-        id: 2,
-        name: 'T-shirt-2',
-      },
-      {
-        id: 3,
-        name: 'T-shirt-3',
-      }
-    ],
-    inputText: '',
-    sp:false,
-     
-  }
-
-  // testHandle = (e) => {
-  //   this.setState({ inputText: e.target.value });
-  //   console.log(this.state.inputText);
-  // }
-
-  showProducts = (e) => {
-    this.setState({ sp: true }); 
-  }
-
   render() {
-
-    var showProductM = '';
-    if (this.state.sp === true) {
-      showProductM = <Products items={this.state.products} />
-    }
-
     return (
-      <div><Header/>
-         
-         
-        <button onClick={this.showProducts}>Show Product</button>
-        {showProductM}
+      <div>
+        <h1>Style in React</h1>
+        <button style={btnStyle}>Button Style</button>
+
       </div>
     )
   }
+}
+
+const btnStyle = {
+  color: "white",
+  background: 'red',
+  padding: '10px',
+  borderRadius: '3px',
+  border:'none'
 }
 export default App;
