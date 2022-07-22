@@ -2,7 +2,7 @@
 import './App.css';
 
 import React, { Component } from 'react'
-
+var { btnStyle } = require('./Styles');
 class App extends Component {
   render() {
     return (
@@ -15,11 +15,4 @@ class App extends Component {
   }
 }
 
-const btnStyle = {
-  color: "white",
-  background: 'red',
-  padding: '10px',
-  borderRadius: '3px',
-  border:'none'
-}
 export default App;
