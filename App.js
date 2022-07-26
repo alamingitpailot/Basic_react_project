@@ -1,12 +1,15 @@
-import React from 'react'
-import UseState from './components/UseState'
+ 
+import './App.css';
 
-export default function App() {
+import UseEffectA from './components/UseEffect'
+
+function App() {
   return (
-    <div>
-      <UseState />
-
+    <div className="App">
+      <h1>App</h1>
+      <UseEffectA />
     </div>
-  )
+  );
 }
 
+export default App;
